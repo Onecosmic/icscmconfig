@@ -1,0 +1,96 @@
+# Copyright (C) 2010 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# All the blobs necessary for galaxys devices
+PRODUCT_COPY_FILES += \
+    vendor/samsung/aries-common/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
+    vendor/samsung/aries-common/proprietary/bcm4329.hcd:system/firmware/bcm4329.hcd \
+    vendor/samsung/aries-common/proprietary/nvram_net.txt:system/firmware/nvram_net.txt \
+    vendor/samsung/aries-common/proprietary/cypress-touchkey.bin:system/firmware/cypress-touchkey.bin \
+    vendor/samsung/aries-common/proprietary/samsung_mfc_fw.bin:system/firmware/samsung_mfc_fw.bin \
+    vendor/samsung/aries-common/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/samsung/aries-common/proprietary/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/aries-common/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/aries-common/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/aries-common/proprietary/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \
+    vendor/samsung/aries-common/proprietary/libakm.so:system/lib/libakm.so \
+    vendor/samsung/aries-common/proprietary/libglslcompiler.so:system/lib/libglslcompiler.so \
+    vendor/samsung/aries-common/proprietary/libIMGegl.so:system/lib/libIMGegl.so \
+    vendor/samsung/aries-common/proprietary/libpvr2d.so:system/lib/libpvr2d.so \
+    vendor/samsung/aries-common/proprietary/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
+    vendor/samsung/aries-common/proprietary/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
+    vendor/samsung/aries-common/proprietary/libsrv_init.so:system/lib/libsrv_init.so \
+    vendor/samsung/aries-common/proprietary/libsrv_um.so:system/lib/libsrv_um.so \
+    vendor/samsung/aries-common/proprietary/CE147F02.bin:system/firmware/CE147F02.bin \
+    vendor/samsung/aries-common/proprietary/libusc.so:system/lib/libusc.so \
+    vendor/samsung/aries-common/proprietary/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so \
+    vendor/samsung/aries-common/proprietary/libsensorservice.so:system/lib/libsensorservice.so \
+    vendor/samsung/aries-common/proprietary/orientationd:system/bin/orientationd \
+    vendor/samsung/aries-common/proprietary/geomagneticd:system/bin/geomagneticd
+
+# camera and tvout
+PRODUCT_COPY_FILES += \
+    vendor/samsung/aries-common/proprietary/libActionShot.so:system/lib/libActionShot.so \
+    vendor/samsung/aries-common/proprietary/libarccamera.so:system/lib/libarccamera.so \
+    vendor/samsung/aries-common/proprietary/libcamera_client.so:system/lib/libcamera_client.so \
+    vendor/samsung/aries-common/proprietary/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
+    vendor/samsung/aries-common/proprietary/libcameraservice.so:system/lib/libcameraservice.so \
+    vendor/samsung/aries-common/proprietary/libCaMotion.so:system/lib/libCaMotion.so \
+    vendor/samsung/aries-common/proprietary/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/aries-common/proprietary/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+    vendor/samsung/aries-common/proprietary/libPlusMe.so:system/lib/libPlusMe.so \
+    vendor/samsung/aries-common/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/aries-common/proprietary/libseccamera.so:system/lib/libseccamera.so \
+    vendor/samsung/aries-common/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
+    vendor/samsung/aries-common/proprietary/libsecjpegencoder.so:system/lib/libsecjpegencoder.so \
+    vendor/samsung/aries-common/proprietary/libtvout.so:system/lib/libtvout.so \
+    vendor/samsung/aries-common/proprietary/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
+    vendor/samsung/aries-common/proprietary/libtvoutfimc.so:system/lib/libtvoutfimc.so \
+    vendor/samsung/aries-common/proprietary/libtvouthdmi.so:system/lib/libtvouthdmi.so \
+    vendor/samsung/aries-common/proprietary/libtvoutservice.so:system/lib/libtvoutservice.so \
+    vendor/samsung/aries-common/proprietary/tvoutserver:system/bin/tvoutserver \
+    vendor/samsung/aries-common/proprietary/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    vendor/samsung/aries-common/proprietary/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+    vendor/samsung/aries-common/proprietary/CE147F00.bin:system/firmware/CE147F00.bin \
+    vendor/samsung/aries-common/proprietary/CE147F01.bin:system/firmware/CE147F01.bin \
+    vendor/samsung/aries-common/proprietary/CE147F02.bin:system/firmware/CE147F02.bin \
+    vendor/samsung/aries-common/proprietary/CE147F03.bin:system/firmware/CE147F03.bin
+
+# low power mode
+PRODUCT_COPY_FILES += \
+    vendor/samsung/aries-common/proprietary/charging_mode:system/bin/charging_mode \
+    vendor/samsung/aries-common/proprietary/playlpm:system/bin/playlpm \
+    vendor/samsung/aries-common/proprietary/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    vendor/samsung/aries-common/proprietary/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+    vendor/samsung/aries-common/proprietary/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    vendor/samsung/aries-common/proprietary/Disconnected.qmg:system/media/Disconnected.qmg
